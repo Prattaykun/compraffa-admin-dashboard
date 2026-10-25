@@ -52,8 +52,8 @@ export default function CustomersPage() {
           <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
           <Input placeholder="Search customers…" value={q} onChange={(e) => setQ(e.target.value)} className="pl-9" />
         </div>
-        <div className="rounded-xl border bg-card">
-          <Table>
+        <div className="overflow-x-auto rounded-xl border bg-card">
+          <Table className="min-w-[520px]">
             <TableHeader>
               <TableRow>
                 <TableHead>Customer</TableHead>

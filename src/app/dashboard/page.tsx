@@ -50,10 +50,10 @@ export default function DashboardPage() {
           )}
         </div>
         <div className="grid gap-4 lg:grid-cols-5">
-          <div className="lg:col-span-3">
+          <div className="min-w-0 lg:col-span-3">
             {stats ? <RevenueChart data={stats.revenueSeries} /> : <Skeleton className="h-96 rounded-xl" />}
           </div>
-          <div className="lg:col-span-2">
+          <div className="min-w-0 lg:col-span-2">
             {stats ? <RecentOrders orders={stats.recentOrders} /> : <Skeleton className="h-96 rounded-xl" />}
           </div>
         </div>

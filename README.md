@@ -50,13 +50,17 @@ Built with **Next.js (App Router) + TypeScript + Tailwind CSS + shadcn/ui**, wit
 
 ## Screenshots
 
-| Dashboard (light) | Products (dark) |
+| Dashboard (light) | Dashboard (dark) |
 | --- | --- |
-| ![Dashboard](docs/screenshots/dashboard-light.png) | ![Products](docs/screenshots/products-dark.png) |
+| ![Dashboard light](docs/screenshots/dashboard-light.png) | ![Dashboard dark](docs/screenshots/dashboard-dark.png) |
 
-| Orders | Order detail | Mobile |
+| Products (dark) | Orders (light) | Orders (dark) |
 | --- | --- | --- |
-| ![Orders](docs/screenshots/orders-dark.png) | ![Order detail](docs/screenshots/order-detail-dark.png) | ![Mobile](docs/screenshots/dashboard-mobile.png) |
+| ![Products](docs/screenshots/products-dark.png) | ![Orders light](docs/screenshots/orders-light.png) | ![Orders](docs/screenshots/orders-dark.png) |
+
+| Order detail (dark) | Mobile dashboard | Mobile products |
+| --- | --- | --- |
+| ![Order detail](docs/screenshots/order-detail-dark.png) | ![Mobile dashboard](docs/screenshots/dashboard-mobile.png) | ![Mobile products](docs/screenshots/products-mobile.png) |
 
 ## Run locally
 
@@ -102,6 +106,9 @@ src/
   lib/                db client, auth/session helpers, zod validators, stats logic
 tests/                Vitest unit tests
 ```
+
+For a guided tour of the codebase (data model, auth flow, API design, testing), see
+[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ## Notes on implementation
 

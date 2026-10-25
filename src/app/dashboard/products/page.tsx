@@ -92,8 +92,8 @@ export default function ProductsPage() {
           </Button>
         </div>
 
-        <div className="rounded-xl border bg-card">
-          <Table>
+        <div className="overflow-x-auto rounded-xl border bg-card">
+          <Table className="min-w-[640px]">
             <TableHeader>
               <TableRow>
                 <TableHead>Product</TableHead>

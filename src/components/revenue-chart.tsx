@@ -6,7 +6,10 @@ import { ChartContainer, ChartTooltip, ChartTooltipContent, type ChartConfig } f
 import { formatCurrency } from "@/lib/format";
 
 const chartConfig = {
-  revenue: { label: "Revenue", color: "var(--color-primary, #6366f1)" },
+  revenue: {
+    label: "Revenue",
+    theme: { light: "#6366f1", dark: "#a5b4fc" },
+  },
 } satisfies ChartConfig;
 
 export function RevenueChart({ data }: { data: { date: string; revenue: number; orders: number }[] }) {
